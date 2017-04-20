@@ -1,0 +1,23 @@
+{
+  "name": "swagger-param-parser",
+  "version": "1.0.0",
+  "description": "Parses the parameters from a swagger doc and turns them into json schemas so you can validate on them and stuff",
+  "main": "swaggerParamParser.js",
+  "scripts": {
+    "test": "tape tests/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewfulrich/swaggerParamParser.git"
+  },
+  "author": "Andrew Ulrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewfulrich/swaggerParamParser/issues"
+  },
+  "homepage": "https://github.com/andrewfulrich/swaggerParamParser#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}
