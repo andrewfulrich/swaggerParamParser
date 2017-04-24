@@ -1,6 +1,6 @@
 {
   "name": "swagger-param-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parses the parameters from a swagger doc and turns them into json schemas so you can validate on them and stuff",
   "main": "swaggerParamParser.js",
   "scripts": {
