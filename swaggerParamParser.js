@@ -40,7 +40,7 @@ function getSwaggerParams(req,swagger) {
     thePath=req.url.substr(0,req.url.indexOf('?'))
   }
   if(swagger.basePath && thePath.indexOf(swagger.basePath) > -1 && thePath.length > thePath.indexOf(swagger.basePath)+swagger.basePath.length) {
-    thePath=thePath.substr(thePath.indexOf(swagger.basePath)+4)
+    thePath=thePath.substr(thePath.indexOf(swagger.basePath)+swagger.basePath.length)
   }
   let theMethod=req.method.toLowerCase()
 
