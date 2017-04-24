@@ -32,7 +32,7 @@
  * gets the parameters from a swagger doc
  * @param req
  * @param swagger
- * @returns {*}
+ * @returns {*} the object within the swagger object the describes the parameters for that path
  */
 function getSwaggerParams(req,swagger) {
   let thePath=req.url
@@ -55,7 +55,7 @@ function getSwaggerParams(req,swagger) {
  * matches a given request url with its corresponding swagger path
  * @param reqPath a real request url
  * @param swaggerPaths a list of all the swagger paths in a swagger doc
- * @returns {{text: string, values}|T}
+ * @returns {{text: string, values}|T} the path string
  */
 function matchPathWithPathParam(reqPath,swaggerPaths) {
   let reqUrlAsArray=reqPath.split('/')
@@ -76,8 +76,8 @@ function matchPathWithPathParam(reqPath,swaggerPaths) {
 
 /**
  * converts parrams in a swagger endpoint to a json schema
- * @param parameters
- * @returns {*}
+ * @param parameters the params as they appear in the swagger object
+ * @returns {*} the json schema of the params
  */
 function swaggerParamsToSchema(parameters) {
   let {params,initialSchema}=parseBodyParams(parameters)
